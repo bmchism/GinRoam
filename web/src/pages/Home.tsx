@@ -16,7 +16,7 @@ const ACTIONS = [
   { to: "/learn", title: "Learn the Basics", sub: "Gin 101", Icon: BookIcon, c: "#9AA7B2", c2: "#6b7a85" },
 ];
 
-const HERO = "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=1000&q=80&auto=format";
+const HERO = "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1000&q=80&auto=format";
 
 export default function Home() {
   const { user } = useAuth();
@@ -32,7 +32,7 @@ export default function Home() {
         {/* Photo hero with greeting */}
         <motion.div className="home-hero" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <div className="home-hero-photo">
-            <img src={HERO} alt="Scottish highlands and distillery at golden hour" loading="eager"
+            <img src={HERO} alt="Gin botanicals and cocktails" loading="eager"
               onError={(e) => { (e.currentTarget.closest(".home-hero-photo") as HTMLElement)?.classList.add("noimg"); }} />
           </div>
           <div className="home-hero-text">

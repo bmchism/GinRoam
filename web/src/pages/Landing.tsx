@@ -46,7 +46,7 @@ export default function Landing() {
         <div className="land-hero-photo">
           <img
             src={HERO_IMG}
-            alt="Highland distillery with copper pot stills at golden hour"
+            alt="Gin and tonic with fresh botanicals at golden hour"
             loading="eager"
             onError={(e) => (e.currentTarget.closest(".land-hero-photo") as HTMLElement)?.classList.add("noimg")}
           />
