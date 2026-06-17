@@ -8,7 +8,7 @@ import { useAuth } from "../lib/auth";
 
 // Scottish distillery hero image.
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=1100&q=80&auto=format";
+  "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1100&q=80&auto=format";
 
 // Positioned as a group activity first — the app is the excuse to gather.
 const OCCASIONS = [
