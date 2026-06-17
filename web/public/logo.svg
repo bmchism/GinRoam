@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Gin Roam">
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="#2E8B57"/>
+  <g fill="none" stroke="#FBF7F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(16,14)">
+    <path d="M12 2L8 6v10c0 4 3 8 8 10 5-2 8-6 8-10V6l-4-4"/>
+    <path d="M16 8v14"/>
+    <path d="M12 12h8"/>
+  </g>
+  <text x="70" y="34" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="600" fill="#3A2A1A" letter-spacing="0.5">Roam</text>
+  <text x="70" y="50" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.6" fill="#2E8B57">GIN</text>
+</svg>
