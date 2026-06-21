@@ -52,3 +52,39 @@ const CATALOG:ProducerRow[]=[
 ];
 export const topWines:TopWineSeed[]=CATALOG.flatMap(row=>row.wines.map(w=>({producer:row.producer,name:w.name,wineType:w.type,region:w.region,country:row.country})));
 export const TOP_COUNT=topWines.length;
+
+// === Additional producers (expanded manifest) ===
+const CATALOG2:ProducerRow[]=[
+{producer:"Citadelle",country:"France",wines:[{name:"Citadelle Original",type:LD,region:"Cognac"},{name:"Citadelle Réserve",type:BA,region:"Cognac"},{name:"Citadelle No Mistake Old Tom",type:OT,region:"Cognac"},{name:"Citadelle Jardin d'Été",type:C,region:"Cognac"}]},
+{producer:"G'Vine",country:"France",wines:[{name:"G'Vine Floraison",type:C,region:"Cognac"},{name:"G'Vine Nouaison",type:NS,region:"Cognac"}]},
+{producer:"Le Gin de Christian Drouin",country:"France",wines:[{name:"Christian Drouin Gin",type:C,region:"Normandy"}]},
+{producer:"Roku",country:"Japan",wines:[{name:"Roku Japanese Craft Gin",type:C,region:"Osaka"},{name:"Roku Sakura Bloom",type:C,region:"Osaka"}]},
+{producer:"Ki No Bi",country:"Japan",wines:[{name:"Ki No Bi Kyoto Dry Gin",type:C,region:"Kyoto"},{name:"Ki No Bi Sei",type:NS,region:"Kyoto"},{name:"Ki No Bi Edition K",type:C,region:"Kyoto"}]},
+{producer:"Nikka Coffey",country:"Japan",wines:[{name:"Nikka Coffey Gin",type:C,region:"Miyagi"}]},
+{producer:"Etsu",country:"Japan",wines:[{name:"Etsu Japanese Gin",type:C,region:"Hokkaido"},{name:"Etsu Double Gin",type:NS,region:"Hokkaido"}]},
+{producer:"Four Pillars",country:"Australia",wines:[{name:"Four Pillars Rare Dry",type:C,region:"Yarra Valley"},{name:"Four Pillars Navy Strength",type:NS,region:"Yarra Valley"},{name:"Four Pillars Bloody Shiraz",type:C,region:"Yarra Valley"},{name:"Four Pillars Olive Leaf",type:C,region:"Yarra Valley"}]},
+{producer:"Archie Rose",country:"Australia",wines:[{name:"Archie Rose Signature Dry Gin",type:C,region:"Sydney"},{name:"Archie Rose White Rye",type:C,region:"Sydney"},{name:"Archie Rose Distiller's Strength",type:NS,region:"Sydney"}]},
+{producer:"Adelaide Hills",country:"Australia",wines:[{name:"78 Degrees Classic Gin",type:C,region:"Adelaide Hills"},{name:"78 Degrees Sunset Gin",type:C,region:"Adelaide Hills"}]},
+{producer:"Inverroche",country:"South Africa",wines:[{name:"Inverroche Classic",type:C,region:"Stilbaai"},{name:"Inverroche Verdant",type:C,region:"Stilbaai"},{name:"Inverroche Amber",type:BA,region:"Stilbaai"}]},
+{producer:"Whitley Neill",country:"UK",wines:[{name:"Whitley Neill Original",type:LD,region:"Birmingham"},{name:"Whitley Neill Blood Orange",type:C,region:"Birmingham"},{name:"Whitley Neill Rhubarb & Ginger",type:C,region:"Birmingham"},{name:"Whitley Neill Raspberry",type:C,region:"Birmingham"}]},
+{producer:"Warner's",country:"UK",wines:[{name:"Warner's London Dry",type:LD,region:"Northamptonshire"},{name:"Warner's Rhubarb",type:C,region:"Northamptonshire"},{name:"Warner's Elderflower",type:C,region:"Northamptonshire"}]},
+{producer:"Chase",country:"UK",wines:[{name:"Chase GB Extra Dry",type:LD,region:"Herefordshire"},{name:"Chase Elegant Crisp",type:C,region:"Herefordshire"},{name:"Chase Pink Grapefruit & Pomelo",type:C,region:"Herefordshire"}]},
+{producer:"Silent Pool",country:"UK",wines:[{name:"Silent Pool Gin",type:C,region:"Surrey"},{name:"Silent Pool Rare Citrus",type:C,region:"Surrey"}]},
+{producer:"Caorunn",country:"UK",wines:[{name:"Caorunn Small Batch",type:C,region:"Speyside"},{name:"Caorunn Master's Cut",type:NS,region:"Speyside"}]},
+{producer:"Drumshanbo",country:"Ireland",wines:[{name:"Drumshanbo Gunpowder Gin",type:C,region:"Leitrim"},{name:"Drumshanbo Sardinian Citrus",type:C,region:"Leitrim"}]},
+{producer:"Dingle",country:"Ireland",wines:[{name:"Dingle Original Gin",type:C,region:"Kerry"},{name:"Dingle Pot Still Gin",type:C,region:"Kerry"}]},
+{producer:"Malfy",country:"Italy",wines:[{name:"Malfy Con Limone",type:C,region:"Turin"},{name:"Malfy Originale",type:C,region:"Turin"},{name:"Malfy Rosa",type:C,region:"Turin"},{name:"Malfy Con Arancia",type:C,region:"Turin"}]},
+{producer:"Gin Mare",country:"Spain",wines:[{name:"Gin Mare Mediterranean",type:C,region:"Costa Brava"},{name:"Gin Mare Capri",type:C,region:"Costa Brava"}]},
+{producer:"Nordés",country:"Spain",wines:[{name:"Nordés Atlantic Galician Gin",type:C,region:"Galicia"}]},
+{producer:"Bobby's",country:"Netherlands",wines:[{name:"Bobby's Schiedam Dry Gin",type:G,region:"Schiedam"},{name:"Bobby's Jenever",type:G,region:"Schiedam"}]},
+{producer:"Bols",country:"Netherlands",wines:[{name:"Bols Genever",type:G,region:"Amsterdam"},{name:"Bols Barrel Aged Genever",type:BA,region:"Amsterdam"},{name:"Bols Corenwyn",type:G,region:"Amsterdam"}]},
+{producer:"Hernö",country:"Sweden",wines:[{name:"Hernö Gin",type:LD,region:"Härnösand"},{name:"Hernö Navy Strength",type:NS,region:"Härnösand"},{name:"Hernö Old Tom",type:OT,region:"Härnösand"},{name:"Hernö Juniper Cask",type:BA,region:"Härnösand"}]},
+{producer:"Kyrö",country:"Finland",wines:[{name:"Kyrö Napue Gin",type:C,region:"Ostrobothnia"},{name:"Kyrö Koskue Gin",type:BA,region:"Ostrobothnia"}]},
+{producer:"Elephant",country:"Germany",wines:[{name:"Elephant London Dry",type:LD,region:"Hamburg"},{name:"Elephant Strength",type:NS,region:"Hamburg"},{name:"Elephant Sloe",type:SG,region:"Hamburg"}]},
+{producer:"Ferdinand's",country:"Germany",wines:[{name:"Ferdinand's Saar Dry Gin",type:C,region:"Saar"},{name:"Ferdinand's Quince",type:C,region:"Saar"}]},
+{producer:"Ungava",country:"Canada",wines:[{name:"Ungava Premium Gin",type:C,region:"Quebec"}]},
+{producer:"Long Table",country:"Canada",wines:[{name:"Long Table London Dry",type:LD,region:"Vancouver"},{name:"Long Table Cucumber Gin",type:C,region:"Vancouver"}]},
+];
+const expanded=CATALOG2.flatMap(row=>row.wines.map(w=>({producer:row.producer,name:w.name,wineType:w.type,region:w.region,country:row.country})));
+// Patch: append to topWines
+(topWines as TopWineSeed[]).push(...expanded);
